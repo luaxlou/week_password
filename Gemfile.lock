@@ -1,0 +1,13 @@
+GEM
+  remote: https://gems.ruby-china.org/
+  specs:
+    seven_zip_ruby (1.2.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  seven_zip_ruby
+
+BUNDLED WITH
+   1.12.5
