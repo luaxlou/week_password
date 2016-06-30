@@ -13,5 +13,8 @@ Dir.glob(['*.txt','*.md5']).each do |f|
   		SevenZipRuby::Writer.add_file(file,"#{f}")
 	end
 
+
+	File.write "../../dicts/#{f}.7z.timestamp",File.mtime(f).to_i;
+
 end
 
