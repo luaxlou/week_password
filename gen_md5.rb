@@ -3,7 +3,7 @@ require 'Digest'
 require 'seven_zip_ruby'
 
 
-Dir.chdir('./tmp')
+Dir.chdir('./tmp/pre')
 
 
 Dir.glob('*.md5').each do |f|
