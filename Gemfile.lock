@@ -1,12 +1,14 @@
 GEM
   remote: https://gems.ruby-china.org/
   specs:
+    file_sort (0.0.3)
     seven_zip_ruby (1.2.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  file_sort
   seven_zip_ruby
 
 BUNDLED WITH

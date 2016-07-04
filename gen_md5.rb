@@ -1,6 +1,7 @@
 #compress dicts
 require 'Digest'
 require 'seven_zip_ruby'
+require 'file_sort'
 
 
 Dir.chdir('./tmp/pre')
@@ -17,5 +18,11 @@ Dir.glob('*.txt').each do |f|
 	  		file.write(Digest::MD5.hexdigest(password)+"\t"+password+"\n")
  	 	end 
 	 end
+
+	 FileSort.new("#{f}.md5", {
+		  sort_column: 0,
+		  column_separator: "\t",
+		  parse_as: :string
+		}).sort!
 
  end
