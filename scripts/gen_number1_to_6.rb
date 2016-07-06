@@ -4,9 +4,9 @@
     	(0.. 99999).each do |n|
 
 
-     		l = n.to_s.length
-    			(1..l).each do |j| do
-	    			nw = '0'*(6-j) +n.to_s
+     		l = 6- n.to_s.length 
+     			(0..l).each do |j|  
+	    			nw = '0'*(j) +n.to_s
 	 		 	  	file.write("#{nw}\n")
  		 	  end 
  		 	  
